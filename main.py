@@ -17,7 +17,7 @@ class App(tk.Tk):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.title("Dungeon Generator")
+        self.title("Drunkard walk")
         self.resizable(False, False)
         self.controller = EventController(self)
 

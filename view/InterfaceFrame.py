@@ -7,7 +7,7 @@ class InterfaceFrame(ttk.Frame):
         super().__init__(container, *args, **kwargs)
         self.controller = controller
 
-        ttk.Label(self, text="Dungeon generator", font=("Segoe UI", 20)).pack()
+        ttk.Label(self, text="Drunkard walk", font=("Segoe UI", 20)).pack()
 
         size_option_frame = SizeOptionFrame(self, self.controller, *args, **kwargs)
         size_option_frame.pack(side="top", fill="both", expand=True)
