@@ -6,12 +6,13 @@ from view.BoardFrame import *
 from view.OutputFrame import *
 from controller.EventController import *
 
-
 try:
     from ctypes import windll
+
     windll.shcore.SetProcessDpiAwareness(1)
 except:
     pass
+
 
 class App(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -34,6 +35,7 @@ class App(tk.Tk):
 
         output_frame = OutputFrame(self, self.controller, padding=(20, 10, 20, 10))
         output_frame.pack(side="bottom", fill="both", expand=True)
+
 
 root = App()
 root.mainloop()
